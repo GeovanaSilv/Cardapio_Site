@@ -1,0 +1,142 @@
+
+.tituloListagem{
+    margin-left: 20px;
+    
+}
+.listagem{
+    background-color: rgb(236, 247, 247);
+    
+}
+
+.listamenu{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    background-color: aliceblue;
+    width: 380px;
+    border-radius: 5px;
+    border: 5px solid rgb(33, 150, 33);
+    
+    margin-left: 20px;
+    font-family:'Times New Roman', Times, serif
+    
+}
+
+.cabectabela{
+    color: rgb(0, 0, 0);
+    background-color: rgb(58, 80, 156);
+    font-size: 20px;
+    text-align: left;
+    
+    
+}
+th,td{
+    padding:10px;
+    border: 1px solid white;
+    font-size: 25px;
+   
+}
+.tbTa{
+    width: 100%;
+    background-color: #d13838;
+    border-radius: 5px;
+}
+
+.btnAltera{
+    background-color:rgb(41, 192, 66);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:5px;
+    font-size: 25px;
+}
+
+.btnRemove{
+    background-color:rgb(216, 110, 115);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:5px;
+    font-size: 25px;
+}
+
+input[type=text]{
+  
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+    
+}
+.lbl{
+    color: rgb(254, 254, 254);
+    padding: 15px;
+    font-size: 20px;
+}
+input[type=number]{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 5px;
+    padding: 15px;
+   font-size: 15px;
+  
+}
+.inclui-cardapio{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+    float: left;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #d13838;
+    padding: 20px;
+    border: 5px solid rgb(16, 88, 16);
+ 
+}
+.btnSalvar{
+    background-color: rgb(29, 95, 34);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:5px 5px 5px 30px;
+    font-size: 20px;
+}
+.btnCancelar{
+    background-color: rgb(29, 95, 34);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:5px;
+    font-size: 20px;
+}
+label{
+    padding: 10px;
+}
+.tituloCadastro{
+    margin-left: 30px;
+}
+
+label{
+    padding: 10px;
+}
+

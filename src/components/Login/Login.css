@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 60px #000;
+    /*background-color: rgb(253, 68, 68);*/
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+
+}
+
+body {
+    background: url("https://i.pinimg.com/564x/25/a4/10/25a41000186cfd0a35435028a44daccc.jpg");
+    color: black
+}
+
+.control input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.btnLogin {
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 6px 6px 6px 10px;
+    background-color: rgb(22, 105, 44);
+    font-size: 19px;
+}
+
+.lblLogin {
+    color: rgb(254, 254, 254);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.msgErro {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+.tituloAuth {
+    color: white;
+}
+.logo{
+    background-color: var(--bg-menu);
+}
+.logo img{
+    width: 120px;
+    padding: 5px;
+    border-radius: 40px;
+}
