@@ -63,9 +63,9 @@ body {
 }
 
 .lblLogin {
-    color: rgb(254, 254, 254);
+    color: rgb(5, 5, 5);
     padding: 15px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .msgErro {

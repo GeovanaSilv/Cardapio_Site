@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from "react";
 import {Routes, Route} from "react-router-dom";
+import './Rotas.css';
  
 import Main from './components/template/Main';
 import AuthService from "./Services/AuthService";
@@ -27,7 +28,7 @@ return(
         <Route exact path="/"
          element={
             <Main title ="Bem vindo!">
-             <div>Seja bem Vindo </div>
+             <div className="mensagem">Seja bem Vindo </div>
             </Main>}
         />
 
@@ -39,7 +40,7 @@ return(
             ):(
                 <Route  exact path="/Cadastro" element={
                     <Main title="Cadastro de Cardapio">
-                    <div>Não autorizado!</div>
+                    <div className="mensagem">Não autorizado!</div>
                             </Main>
                 }/>
             )}

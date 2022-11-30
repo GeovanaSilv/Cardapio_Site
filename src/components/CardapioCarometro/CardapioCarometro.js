@@ -3,16 +3,13 @@ import axios from 'axios';
 import './CardapioCarometro.css';
 import Main from '../template/Main';
 import UserService from "../../Services/UserService";
+import lanche from '../../assets/lanche1.jpeg';
 
-const title = "Carometro";
-const urlApiTipo = "http://localhost:5205/api/Tipo";
-const urlAPICardapio = "http://localhost:5205/Api/cardapio"
+const title = "Cardapio";
 const initialState = {
   cardapio: { id: 0, nome: '', porcoes: 0, valor: '', codTipo: 0, nomeTipo: '', descricao: '' },
-  tipoCar: { id: 0, nomeTipo: '', codTipo: 0 },
   lista: [],
   listaCarometro: [],
-  listaTipo: [],
   mens: null
 }
 export default class CardapioCarometro extends Component {
@@ -37,21 +34,16 @@ export default class CardapioCarometro extends Component {
       }
     )
   }
-
-
   getListaAtualizadaCardapio(evento) {
     const codTipo = evento.target.value
     const lista = this.state.lista.filter(a => a.codTipo == codTipo);
     this.setState({ listaCarometro: lista });
-    this.setState({ tipoCar: this.state.tipoCar })
     this.setState({ cardapio: this.state.cardapio })
   }
   atualizaCampo(evento) {
     const cardapio = { ...this.state.cardapio };
-    const tipoCar = { ...this.state.tipoCar };
-    tipoCar[evento.target.name] = evento.target.value;
     this.setState({ cardapio });
-    this.setState({ tipoCar });
+
   }
 
 
@@ -64,12 +56,9 @@ export default class CardapioCarometro extends Component {
 
         {this.state.listaCarometro.map((cardapio) =>
           <div key={cardapio.id} className="cardInfo" sx={{ minWidth: 300 }}>
-
-
-
+               <div className="lanche1"> <img src= {lanche}  alt="Logo"/></div>
             <span>Nome:   {cardapio.nome}</span>
             <span>porcoes : {cardapio.porcoes}</span>
-            <span>Tipo   :    {cardapio.codTipo}</span>
             <span>Descriçoes : {cardapio.descricao}</span>
             <span>Valor : {cardapio.valor}</span>
 

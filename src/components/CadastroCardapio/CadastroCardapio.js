@@ -3,7 +3,6 @@ import UserService from "../../Services/UserService";
 import Main from "../template/Main";
 import './CadastroCardapio.css';
 import axios from 'axios';
-//import { ErrorResponse } from "@remix-run/router";
 
 const title = "Cadastrar Cardapio";
 const urlApiMenu = "http://localhost:5205/api/cardapio";
